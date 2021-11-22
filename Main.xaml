@@ -1,0 +1,167 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="MainP" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1117.6,1192.8" sap2010:WorkflowViewState.IdRef="MainP_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="420,1128" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="LunaAleasa" />
+      <Variable x:TypeArguments="x:String" Name="Perioada" />
+      <Variable x:TypeArguments="x:String" Default="0" Name="CheckOut" />
+      <Variable x:TypeArguments="x:String" Name="NumarPersoane" />
+      <Variable x:TypeArguments="x:String" Default="0" Name="CheckIn" />
+      <Variable x:TypeArguments="x:String" Name="Localitate" />
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;ianuarie&quot;, &quot;februarie&quot;, &quot;martie&quot;, &quot;aprilie&quot;, &quot;mai&quot;, &quot;iunie&quot;, &quot;iulie&quot;, &quot;august&quot;, &quot;septembrie&quot;, &quot;octombrie&quot;, &quot;noiembrie&quot;, &quot;decembrie&quot;}]" Name="LuniAn" />
+      <Variable x:TypeArguments="x:String" Name="LunaSiAnCalendar" />
+      <Variable x:TypeArguments="x:String" Name="LunaExtrasa" />
+      <Variable x:TypeArguments="x:Int32" Name="NumarLunaExtrasa" />
+      <Variable x:TypeArguments="x:Int32" Name="NumarLunaAleasa" />
+      <Variable x:TypeArguments="x:Int32" Name="NrClickuri" />
+      <Variable x:TypeArguments="x:Int32" Name="IntPersoane" />
+      <Variable x:TypeArguments="x:String" Name="C" />
+      <Variable x:TypeArguments="x:String" Name="NumeExcelCazari" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dtCazari" />
+      <Variable x:TypeArguments="ui:Browser" Name="browser" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:Int32" Name="NumarLuna" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Formular Date Vacanta" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Formular\Formular Date Vacanta.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_Localitate">[Localitate]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_LunaAleasa">[LunaAleasa]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_Email">[Email]</OutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="io_Perioada">[Perioada]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="io_NumarPersoane">[NumarPersoane]</InOutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_CheckIn">[CheckIn]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_CheckOut">[CheckOut]</OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="out_IntPersoane">[IntPersoane]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Deschidere Browser si introducere localitatii" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Introducere date browser\Introducere Localitate.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="ui:Browser" x:Key="out_browser">[browser]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Localitate">[Localitate]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Introducere Perioada De Cazare" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Introducere date browser\Introducere Perioada De Cazare.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="ui:Browser" x:Key="io_browser">[browser]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="io_LunaSiAnCalendar">[LunaSiAnCalendar]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:String" x:Key="io_LunaExtrasa">[LunaExtrasa]</InOutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_LunaAleasa">[LunaAleasa]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CheckIn">[CheckIn]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CheckOut">[CheckOut]</InArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="io_NumarLunaExtrasa">[NumarLunaExtrasa]</InOutArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="in_LuniAn">[LuniAn]</InArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="io_NumarLunaAleasa">[NumarLunaAleasa]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="io_NrClickuri">[NrClickuri]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Introducere Numar de Persoane" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Introducere date browser\Introducere Numar de Persoane.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="ui:Browser" x:Key="io_browser">[browser]</InOutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="io_IntPersoane">[IntPersoane]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Preluare Tabel Cazari " sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Obtinere si manipulare cazari\Preluare Cazari.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dtCazari">[dtCazari]</InOutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_C">[C]</OutArgument>
+        <InOutArgument x:TypeArguments="ui:Browser" x:Key="io_browser">[browser]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Prelucrare Cazari" sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Obtinere si manipulare cazari\Prelucrare Cazari.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InOutArgument x:TypeArguments="x:String" x:Key="io_NumeExcelCazari">[NumeExcelCazari]</InOutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Localitate">[Localitate]</InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtCazari">[dtCazari]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Trimitere mail " sap:VirtualizedContainerService.HintSize="378.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Trimitere prin mail\Trimitere mail.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Localitate">[Localitate]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_NumeExcelCazari">[NumeExcelCazari]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Email">[Email]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CheckIn">[CheckIn]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CheckOut">[CheckOut]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_LunaAleasa">[LunaAleasa]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

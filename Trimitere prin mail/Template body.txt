@@ -1,0 +1,6 @@
+Buna ziua domnule/doamna {0},
+
+Aveti atasat un document excel avand recomandari de cazare pentru {1} in perioada {2}-{3} {4}.
+
+O zi frumoasa in continuare. 
+Lucian
